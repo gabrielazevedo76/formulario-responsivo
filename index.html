@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>WoldNews</title>
+</head>
+<body>
+    
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand text-uppercase fst-italic fw-bolder" style="margin-right: 4rem;" href="./index.html">
+                  <img src="./images/world.png" width="50px" alt="world">
+                  WorldNews
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="navbarDropdown">Vídeos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" aria-disabled="false">Contato</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search">
+                  <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+          <form class="form" action="GET">
+            <div class="row">
+              <div class="col">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" maxlength="60" placeholder="Digite seu nome..">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="cpfcnpj" class="form-label">CPF ou CNPJ</label>
+                <input type="number" class="form-control" id="cpfcnpj" placeholder="Digite seu CPF ou CNPJ..">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="celular" class="form-label">Celular</label>
+                <input type="number" class="form-control" id="celular" placeholder="Digite seu numero de celular..">
+              </div>
+              <div class="col">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="number" class="form-control" id="telefone" placeholder="Digite seu numero de telefone..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="number" class="form-control" id="cep_input" placeholder="Digite o seu CEP..">
+              </div>
+              <div class="col">
+                <label for="numero" class="form-label">Numero</label>
+                <input type="number" class="form-control" id="numero" placeholder="Digite o numero da sua residência..">
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col">
+                <label for="complemento" class="form-label">Complemento</label>
+                <input type="text" class="form-control" id="complemento">
+              </div>
+              <div class="col">
+                <label for="logradouro" class="form-label">logradouro</label>
+                <input type="text" class="form-control" id="logradouro">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="bairro" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="bairro">
+              </div>
+              <div class="col">
+                <label for="cidade" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="localidade">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="estado" class="form-label">Estado</label>
+                <input type="text" class="form-control" id="uf"> 
+              </div>
+            </div>
+            <div class="row mt-3 ">
+              <div class="col">
+                <button class="btn btn-primary w-100" id="button" type="submit">Enviar</button>
+              </div>
+            </div>
+          </form>
+
+    </div>
+    <script src="./javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
